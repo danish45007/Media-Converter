@@ -1,28 +1,29 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Converter App</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <title>Media Converter App</title>
-  </head>
-  <body>
-    <div class="container">
-        <br><br>
-        <h1 style="text-align: center;">Media Converter App</h1>
-        <div class="from-group">
-          <label for="format">Select Format:</label>
-          <select class="form-control" id="format">
-            <option>mp3</option>
-            <option>avi</option>
-            <option>flv</option>
-            <option>mp4</option>
-          </select>
+    </head>
+    <body>
+        <div class="container">
+            <br><br>
+            <h1 style="text-align: center;">Media Converter</h1>
+            <div class="form-group">
+                <label for="format">Select Format:</label>
+                <select class="form-control" id="format">
+                  <option>mp3</option>
+                  <option>flv</option>
+                  <option>avi</option>
+                  <option>mp4</option>
+                </select>
+            </div>
+            <br>
+            <button class="btn btn-block btn-danger" id="upload">Select File & Convert</button>
+            <br><br>
+            <div id="info"></div>
         </div>
-    </div>
-  </body>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="renderer.js"></script>
 </html>
