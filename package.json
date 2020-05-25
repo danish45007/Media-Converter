@@ -1,0 +1,19 @@
+{
+  "name": "mediaapp",
+  "version": "1.0.0",
+  "description": "A simple desktop to convert one media format into other",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch * --exec electron ."
+  },
+  "author": "@Danish",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "nodemon": "^2.0.4",
+    "random-string": "^0.2.0"
+  }
+}
